@@ -17,14 +17,14 @@ MODEL:
     ENABLE_DECOUPLE: True
     BACKWARD_SCALE: 0.01
 DATASETS:
-  TRAIN: ('coco14_trainval_novel_30shot_seedx',)
+  TRAIN: ("coco14_trainval_novel_30shot_seed0", )
   TEST: ('coco14_test_novel',)
 SOLVER:
   IMS_PER_BATCH: 16
   BASE_LR: 0.01
-  STEPS: (3200,)
-  MAX_ITER: 4000
-  CHECKPOINT_PERIOD: 100000
+  STEPS: (9000,)
+  MAX_ITER: 10000
+  CHECKPOINT_PERIOD: 1000
   WARMUP_ITERS: 0
 TEST:
   PCB_ENABLE: True

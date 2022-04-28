@@ -1,0 +1,7 @@
+[core]
+    remote = storage
+['remote "s3playground"']
+    url = s3://cupix-machine-learning-dataset-apne2/COCO2014/
+['remote "storage"']
+    url = s3://cupix-machine-learning-dataset-apne2/COCO2014
+    profile = playground_andrew

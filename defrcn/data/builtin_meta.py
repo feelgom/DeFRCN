@@ -133,6 +133,12 @@ COCO_CATEGORIES = [
     {"color": [0, 114, 143], "isthing": 0, "id": 198, "name": "rock-merged"},
     {"color": [102, 102, 156], "isthing": 0, "id": 199, "name": "wall-other-merged"},
     {"color": [250, 141, 255], "isthing": 0, "id": 200, "name": "rug-merged"},
+    {"color": [250, 141, 255], "isthing": 1, "id": 91, "name": "coffee maker"},
+    {"color": [240, 141, 255], "isthing": 1,"id": 92, "name": "coffee grinder"},
+    {"color": [230, 141, 255], "isthing": 1, "id": 93, "name": "kettle"},
+    {"color": [220, 141, 255], "isthing": 1,"id": 94, "name": "fire extinguisher"},
+    {"color": [210, 141, 255], "isthing": 1, "id": 95, "name": "caution mark"},
+    {"color": [200, 141, 255], "isthing": 1, "id": 96, "name": "head jack"},
 ]
 
 # Novel COCO categories
@@ -157,6 +163,12 @@ COCO_NOVEL_CATEGORIES = [
     {"color": [163, 255, 0], "isthing": 1, "id": 64, "name": "potted plant"},
     {"color": [0, 182, 199], "isthing": 1, "id": 67, "name": "dining table"},
     {"color": [183, 130, 88], "isthing": 1, "id": 72, "name": "tv"},
+    {"color": [250, 141, 255], "isthing": 1, "id": 91, "name": "coffee maker"},
+    {"color": [240, 141, 255], "isthing": 1,"id": 92, "name": "coffee grinder"},
+    {"color": [230, 141, 255], "isthing": 1, "id": 93, "name": "kettle"},
+    {"color": [220, 141, 255], "isthing": 1,"id": 94, "name": "fire extinguisher"},
+    {"color": [210, 141, 255], "isthing": 1, "id": 95, "name": "caution mark"},
+    {"color": [200, 141, 255], "isthing": 1, "id": 96, "name": "head jack"},
 ]
 
 # PASCAL VOC categories
@@ -203,7 +215,7 @@ PASCAL_VOC_BASE_CATEGORIES = {
 def _get_coco_instances_meta():
     thing_ids = [k["id"] for k in COCO_CATEGORIES if k["isthing"] == 1]
     thing_colors = [k["color"] for k in COCO_CATEGORIES if k["isthing"] == 1]
-    assert len(thing_ids) == 80, len(thing_ids)
+    assert len(thing_ids) == 86, len(thing_ids)
     # Mapping from the incontiguous COCO category id to an id in [0, 79]
     thing_dataset_id_to_contiguous_id = {k: i for i, k in enumerate(thing_ids)}
     thing_classes = [k["name"] for k in COCO_CATEGORIES if k["isthing"] == 1]

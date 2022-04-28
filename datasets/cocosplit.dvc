@@ -1,0 +1,5 @@
+outs:
+- md5: 64e30195eddd870d46911c7e1542720e.dir
+  size: 615842609
+  nfiles: 4809
+  path: cocosplit

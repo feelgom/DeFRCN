@@ -31,5 +31,6 @@ _CC.TEST.PCB_UPPER = 1.0
 _CC.TEST.PCB_LOWER = 0.05
 
 # ------------ Other ------------- #
-_CC.SOLVER.WEIGHT_DECAY = 5e-5
+# _CC.SOLVER.WEIGHT_DECAY = 5e-5
+_CC.SOLVER.WEIGHT_DECAY = 5e-4
 _CC.MUTE_HEADER = True
